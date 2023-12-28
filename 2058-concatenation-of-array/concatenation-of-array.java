@@ -5,7 +5,6 @@ class Solution {
         for(int i=0;i<len;i++){
             result[i]=result[i+len]=nums[i];
         }
-        System.gc();
         return result;
     }
 }
