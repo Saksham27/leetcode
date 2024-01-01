@@ -4,11 +4,13 @@ class Solution {
         if(ruleKey.equals("type")){
             index = 0;
         }
-        if(ruleKey.equals("color")){
+        else if(ruleKey.equals("color")){
             index=1;
         }
-        if(ruleKey.equals("name")){
+        else if(ruleKey.equals("name")){
             index=2;
+        }else{
+            
         }
 
         if(index ==4){
