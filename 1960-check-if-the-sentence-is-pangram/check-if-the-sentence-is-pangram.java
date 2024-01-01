@@ -1,10 +1,10 @@
 class Solution {
     public boolean checkIfPangram(String sentence) {
         ArrayList<Character> arr = new ArrayList<Character>();
-
-        for(int i=0;i<sentence.length();i++){
-            if(arr.indexOf(sentence.charAt(i)) == -1){
-                arr.add(sentence.charAt(i));
+        char[] chararr = sentence.toCharArray();
+        for(int i=0;i<chararr.length;i++){
+            if(arr.indexOf(chararr[i]) == -1){
+                arr.add(chararr[i]);
             }
         }
         return arr.size() == 26 ? true : false;
